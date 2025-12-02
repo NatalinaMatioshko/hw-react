@@ -2,7 +2,7 @@ body {
   min-height: 100vh;
   margin: 0;
   box-sizing: border-box;
-  background: linear-gradient(184deg, #b4babe, #2c2b2c);
+  background: linear-gradient(184deg, #a7e5d2, #06150f);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   flex-direction: column;
@@ -70,4 +70,23 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.container {
+  max-width: 500px;
+  margin-bottom: 50px;
+  border: 2px solid #143133;
+  padding: 20px;
+  color: rgba(221, 231, 174, 0.8549019608);
 }/*# sourceMappingURL=main.css.map */

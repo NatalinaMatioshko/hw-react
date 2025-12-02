@@ -3,14 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lesson_36 Class JS</title>
+    <title>HW Class JS</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.svg" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <header class="header">
-      <h1 class="header__title">Class JS from Ivan Vasylenko</h1>
+      <h1 class="header__title">Classes JS from Natalie Matyoshko</h1>
     </header>
     <main class="main">
+      <div class="container">
+        <h2>Реалізуй клас User.</h2>
+        <p>
+          Під час створення екземпляру на базі цього класу, обʼєкт повинен мати
+          вигляд {name: ‘Petro’, role: ‘admin’} (role може бути або admin або
+          user). У разі невірно переданих даних такого об’єкта — попереджати за
+          допомогою alert-у відповідне поле, яке введено некоректно. У класі
+        </p>
+        <h3>User повинні бути такі компоненти:</h3>
+        <ul>
+          <li>getName</li>
+          <li>getRole</li>
+          <li>login</li>
+          <li>logout</li>
+          <li>сhangeName</li>
+          <li>changePassword</li>
+        </ul>
+        <h3>У класі Admin повинні бути такі компоненти:</h3>
+        <ul>
+          <li>addUser</li>
+          <li>removeUser</li>
+          <li>changeUserRole</li>
+          <li>getAllUsers</li>
+          <li>removeAllUsers</li>
+        </ul>
+      </div>
       <form method="get" class="form">
         <input type="text" placeholder="Your name..." data-properties="name" />
         <input type="text" placeholder="Your city..." data-properties="city" />
