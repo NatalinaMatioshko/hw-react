@@ -8,28 +8,36 @@
 // Імпортування основного модуля -------------
 import gulp from "gulp";
 
-// Імпортування допоміжних модулів ---------------
+// Імпортування допоміжних модулів ---------------Імпортуємо конфіги
 import { path } from "./gulp/config/path.js";
 import { plugins } from "./gulp/config/plugins.js";
 
-// -- Імпортування тасок -------------
-import { html } from "./gulp/tasks/html.js";
-import { scss } from "./gulp/tasks/scss.js";
-
-// -- Передача даних в глобальний об'єкт -------------
+// -- Передача даних в глобальний об'єкт -------------Оголошуємо глобальну змінну (ВАЖЛИВО: перед імпортом тасок!)
 global.app = {
   path: path,
   gulp: gulp,
   plugins: plugins,
 };
 
+// -- Імпортування тасок -------------
+import { html } from "./gulp/tasks/html.js";
+import { scss } from "./gulp/tasks/scss.js";
+import { js } from "./gulp/tasks/js.js"; // Додано js
+import { server } from "./gulp/tasks/server.js"; // Додано server
+import { reset } from "./gulp/tasks/reset.js";
+
 //  Watcher - слідкує за змінами в файлах -------------
 function watcher() {
   gulp.watch(path.watch.html, html);
   gulp.watch(path.watch.scss, scss);
+  gulp.watch(path.watch.js, js); // Додано js watcher
 }
 
-// Сценарій виконання тасок ---------------------
+// 4. Створюємо mainTasks (цього рядка не вистачало!)
 const mainTasks = gulp.parallel(html, scss);
 
-gulp.task("default", mainTasks);
+// Режим розробки: очистка -> білд -> watcher + сервер
+const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
+
+// Експорт
+export default dev;
