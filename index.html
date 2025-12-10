@@ -3,25 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lesson_36 Class JS</title>
+    <title>React Start</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.svg" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <header class="header">
-      <h1 class="header__title">Class JS from Ivan Vasylenko</h1>
+      <h1 class="title title_1">React JS from Natalie Matyosko</h1>
     </header>
     <main class="main">
-      <form method="get" class="form">
-        <input type="text" placeholder="Your name..." data-properties="name" />
-        <input type="text" placeholder="Your city..." data-properties="city" />
-        <input
-          type="text"
-          placeholder="Your course..."
-          data-properties="course"
-        />
-        <button type="submit">Create Student</button>
-      </form>
+      <section class="react-inner" id="react-inner">
+        <h2>This Block with React's control</h2>
+        <div class="like_button" id="like-button"></div>
+        <div class="timer" id="timer">
+          <!-- <h2 id="timer">Time: <span>0</span> sec</h2> -->
+        </div>
+
+        <div id="count"></div>
+
+        <div class="timer_block" id="timer_block">
+          <h2 id="timer_b">Time: <span>0</span> sec</h2>
+        </div>
+      </section>
+
+      <section class="react-out">
+        <h2>This Block without React's control</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit vel
+          officiis necessitatibus nisi quibusdam quos dignissimos dolore magni,
+          nulla blanditiis et ipsam odit rem beatae nesciunt eveniet error
+          voluptatum omnis eum. Ut, aliquid temporibus laborum debitis, eligendi
+          animi autem nostrum, aut magnam suscipit dolor in! Amet non ex
+          corporis alias consectetur eveniet eius, sit id aliquam accusamus
+          delectus doloribus quia placeat architecto quaerat temporibus quis
+          aperiam eligendi laudantium. Cum itaque tempore iste iusto enim ab,
+          animi similique doloremque dicta temporibus.
+        </p>
+      </section>
     </main>
-    <script src="./js/main.js"></script>
+    <!-- <script src="./script.js"></script> -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- <script src="./components/LikeButton.js" type="text/babel"></script> -->
+    <!-- <script src="./components/Hello.js" type="text/babel"></script> -->
+    <!-- <script src="./components/Timer_function.jsx" type="text/babel"></script> -->
+    <!-- <script src="./components/Timer_class.jsx" type="text/babel"></script> -->
+    <!-- <script src="./components/Count.jsx" type="text/babel"></script> -->
+    <script src="./App.jsx" type="module"></script>
   </body>
 </html>

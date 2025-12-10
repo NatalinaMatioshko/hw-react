@@ -1,73 +1,58 @@
 body {
   min-height: 100vh;
+  background: linear-gradient(#95d198, #12311b);
+  padding: 0;
   margin: 0;
-  box-sizing: border-box;
-  background: linear-gradient(184deg, #b4babe, #2c2b2c);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #182529;
 }
 
 .header {
-  padding: 20px 30px;
-}
-.header__title {
-  position: relative;
-  color: #446670;
-}
-.header__title::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 30px;
-  width: 100%;
-  height: 2px;
-  background: #198783;
-  box-shadow: 2px 2px 5px 0px grey;
+  padding: 20px;
+  background: rgba(60, 157, 73, 0.6862745098);
 }
 
 .main {
   flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 100px;
-}
-.main .btns {
-  min-width: 700px;
-  display: flex;
-  justify-content: space-between;
-}
-.main .btns__btn {
-  padding: 10px 38px;
-  background: linear-gradient(176deg, #363333, rgba(209, 234, 230, 0.8784313725));
-  border-radius: 10px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #143133;
-  font-weight: 500;
-  letter-spacing: 1px;
-  box-shadow: 0 0 5px 0px #223e40;
-}
-.main .btns__btn:hover {
-  background: linear-gradient(90deg, #2c2b2c, #9ea1a3);
+  padding: 30px;
 }
 
-.section_new {
-  background: red;
-  padding: 20px;
-  margin-bottom: 20px;
-  border: 1px solid #fff;
+.react {
+  padding: 30px 10px;
+  margin-bottom: 44px;
+  border: 1px solid #000;
+}
+.react__title {
+  font-size: 1.4em;
+  font-weight: 400;
+  position: relative;
+}
+.react__title::after {
+  content: "";
+  position: absolute;
+  left: 26px;
+  bottom: -10px;
+  display: block;
+  width: 70%;
+  height: 2px;
+  background: rgba(60, 157, 73, 0.6862745098);
 }
 
-.new_btn {
-  font-size: 24px;
+.btn_plus {
+  padding: 5px 10px;
+  border: 1px solid #334043;
+  border-radius: 8px;
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.footer {
+  padding: 40px 20px;
+  background: #123232;
+  color: #64aab1;
+}
+
+.timer_block {
+  background: linear-gradient(#a8f75e, #55a505);
 }/*# sourceMappingURL=main.css.map */
